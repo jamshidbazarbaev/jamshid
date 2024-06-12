@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-section {
+    width: 30%;
+    position: fixed;
+}
+
+.data-section {
+    width: 65%;
+    margin-left: 35%;
+    height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input, .form-control select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.expense-list {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.expense-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.expense-list li button {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.expense-list li button:hover {
+    background-color: #ff1a1a;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+}
+
+
+
+@media (max-width: 375px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form-section {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .data-section {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .form-control input, .form-control select, button {
+        width: 100%;
+    }
+
+    .expense-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-list li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 414px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form-section {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .data-section {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        overflow-y: visible;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .form-control input, .form-control select, button {
+        width: 100%;
+    }
+
+    .expense-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-list li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
